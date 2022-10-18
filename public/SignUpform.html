@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /*add full-width input fields*/
+       
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+        /* set a style for all buttons*/
+        
+        .submit {
+            background-color: Green;
+            color: white;
+            padding: 15px 20px;
+            margin: 8px 0;
+            cursor: pointer;
+            width: 100%;
+        }
+        /*set styles for the cancel button*/
+        
+        .cancelbtn {
+            padding: 15px 20px;
+            background-color: #FF2E00;
+        }
+        /*float cancel and signup buttons and add an equal width*/
+        
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%;
+        }
+        /*add padding to container elements*/
+        
+        .container {
+            padding: 16px;
+            background-image: url("4857396.jpg");
+        }
+        /*clear floats*/
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /*styles for cancel button and signup button
+        on extra small screens*/
+        
+        @media screen and (max-width: 300px) {
+            .cancelbtn,
+            .signupbtn {
+                width: 100%;
+            }
+        }
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form - MongoDB</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6 main">
+                <form action="" onsubmit="return my_click_Handler " method="POST">
+                    <h2>SignUp Form</h2>
+                    <input type="text" class="box" id="name" name="name" placeholder="Name" required />
+                    <br>
+                    <input type="text" class="box" id="email" name="email" placeholder="Email" required />
+                    <br>
+                    <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required />
+                    <br>
+                    <input type="text" class="box" id="password" name="password" placeholder="Password" required />
+                    <br>
+                    <button type="button"  onclick="my_button_click_Handler()">Submit</button>
+                    <script>
+                        function my_click_Handler(){
+                            alert('Sign Up completed! Directing to Login Page..')
+                        }
+                    </script>
+                </form>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* .mySlides {display:none;} */
+        </style>
+   
+        
+        
+        <h2 class="w3-center">Automatic Slideshow</h2>
+        
+        <div class="w3-content w3-section" style="max-width:60%">
+          <img class="mySlides" src="elders.jpg" style="width:100%">
+          <img class="mySlides" src="10848.jpg" style="width:100%">
+          <img class="mySlides" src="Background.jpg" style="width:100%">
+        </div>
+        
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+    
+
+
+
+</body>
+
+</html>
+
+      <!-- <h1 style="margin-left: 40%; margin-top: 50px; color: rgb(253, 253, 253); background-color: black; padding-bottom: 40px;">Motivational Quotes!!</h1> -->
+<!-- <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style="width: 50%; background-color: black; padding-top: 50px; padding-bottom: 50px;" ;>
+    
+    <div class="carousel-inner"   style="width: 1000%; height: fit-content;">
+      <div class="carousel-item active" data-interval="2000" >
+        <img src="\Image\OLD4.jpg" class="d-block w-70 h-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="\Image\OLD1.jpg" class="d-block w-70 h-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="\Image\OLD2.jpg" class="d-block w-70 h-100" alt="..." >
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="\Image\OLD3.jpg" class="d-block w-70 h-100" alt="..." >
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="" role="button" data-slide="prev"  >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> -->
+  <!-- <hr class="rounded"> -->
+
+  
+
+
+<!-- <div class="card">
+  <div class="card-header" style="color: green; background-color: rgb(227, 227, 11); font-weight: 900;">
+    <marquee direction="right" width="20%" behaviour="scroll" scrollamount="30"> Join the Hustle Today!🚀 </marquee> 
+  </div>
+  <div class="card-body">
+    
+    <h5 class="card-title" style="border: 5px; border-color: black;">Be Kind to Your body!</h5>
+    <p class="card-text">Always Hustle through pain and lead a much Healthier Life, Starting Now!</p>
+      <p > Reach out to us for Personal Training.[All age groups are welcome!]</p>
+      Special Trainers for the Elderly are Available!
+    </p>
+    <a href="Form.html" target="_blank"  class="btn btn-primary">Contact us Now!</a>
+  </div> -->
